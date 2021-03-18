@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Search
-description: "What are you looking for?"
+title: Buscar
+description: "¿Qué estas buscando?"
 header-img: "img/archive-bg.jpg"
 permalink: /search/
 ---
@@ -12,7 +12,7 @@ permalink: /search/
       #search-input {
         display: inline-block;
         color: #008989;
-        background-color: #12161d;
+        background-color: #7e8187;
         border-color: #223333;
         padding: .5em;
         width: 100%;
@@ -22,7 +22,7 @@ permalink: /search/
          #search-input:focus {
         display: inline-block;
         color: #ddd;
-        background-color: #12161d;
+        background-color: #7e8187;
         border-color: #223333;
         border-width: thick;
         border-style: outset;
@@ -48,10 +48,10 @@ permalink: /search/
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.baseurl }}/search.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
+        noResultsText: 'No se encontraron resultados',
         limit: 10,
         fuzzy: true,
-        exclude: ['Welcome']
+        exclude: ['Bienvenido']
       })
     </script>
 
