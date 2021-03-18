@@ -11,7 +11,7 @@ github_username:  ""
 deviantart_username: ""
 flickr_username: ""
 discus_shortname: ""
-share: true
+share: false
 
 # Owner/author information
 owner:
@@ -26,7 +26,7 @@ owner:
 #Set 'provider: false' to disable comments globally.
 # Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
 #
-comments :
+comments : false
   provider : disqus
   disqus :
     short_name : ""
