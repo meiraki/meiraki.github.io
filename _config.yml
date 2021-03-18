@@ -4,14 +4,14 @@ email: ""
 description: "Photo Journal"
 url: "https://leokonig.github.io"
 baseurl: "/pag4"
-facebook_username: "Meiraki-Jabones-Artesanales-y-Terapéuticos"
-twitter_username: ""
+facebook_username: "Meiraki-Jabones-Artesanales-y-Terapéuticos-1638400379769477"
+twitter_username: false
 instagram_username: "meiraki_qro"
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
-share: true
+github_username:  false
+deviantart_username: false
+flickr_username: false
+discus_shortname: false
+share: false
 
 # Owner/author information
 owner:
