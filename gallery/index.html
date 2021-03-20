@@ -8,7 +8,7 @@ images:
  - image_path: /gallery/albums/alb01.jpg
    gallery-folder: /gallery/gallery01/
    gallery-name: gallery1
-   gallery-date: 
+   gallery-date:
  - image_path: /gallery/albums/alb02.jpg
    gallery-folder: /gallery/gallery02/
    gallery-name: gallery2
@@ -41,6 +41,10 @@ images:
    gallery-folder: /gallery/gallery09/
    gallery-name: gallery9
    gallery-date: November 2014
+- image_path: /gallery/albums/Premium.jpg
+   gallery-folder: /gallery/Premium/
+   gallery-name: Línea Premium
+   gallery-date:
 ---
 
 <html class="no-js" lang="en">
@@ -51,25 +55,25 @@ images:
 
 
     <body class="gallery">
- 
+
 	<section id="content" role="main">
 		<div class="wrapper">
-	
+
 			<h2>{{page.title}}</h2>
-			
+
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-				
-{% for image in page.images %}  	
+
+{% for image in page.images %}
 
 	               <figure class="gallery-item">
                          <figure class="effect-selena">
 					<header class='gallery-icon'>
-		       
+
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 
-					</header>	
+					</header>
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary">
 							<h3>{{image.gallery-name}}</h3>
@@ -78,23 +82,23 @@ images:
 					</figcaption>
                        </figure>
 				</figure>
-							
-{% endfor %}		
-				
+
+{% endfor %}
+
 			</div>
-			
+
 		</div><!-- END .wrapper -->
 	</section>
 
 
 <br>
 
-<!-- jQuery -->    
+<!-- jQuery -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
