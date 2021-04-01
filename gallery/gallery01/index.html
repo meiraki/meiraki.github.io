@@ -1,61 +1,68 @@
 ---
 layout: page
-title: "LÍNEA PREMIUM"
+title: "Línea Premium"
 description: "Hechos con los mejores materiales y gran calidad"
 active: gallery
-header-img: "gallery/albums/PREMIUM.jpg"
-album-title: "Nuestras categorías"
+header-img: "/gallery/albums/Premium.jpg"
 images:
  - image_path: /gallery/albums/PREMIUM/ANTI_ACNE.jpg
-   caption: ANTI ACNÉ
-   copyright: 
+   gallery-folder: /gallery/gallery01/ANTI_ACNE/
+   gallery-name: ANTI ACNÉ
+   gallery-date:
  - image_path: /gallery/albums/PREMIUM/ANTI_ARRUGAS.jpg
-   caption: ANTI ARRUGAS
-   copyright:
+   gallery-folder: /gallery/gallery01/ANTI_ARRUGAS/
+   gallery-name: ANTI ARRUGAS
+   gallery-date:
  - image_path: /gallery/albums/PREMIUM/BEBE.jpg
-   caption: LINEA DE BEBÉ
-   copyright:
+   gallery-folder: /gallery/gallery01/BEBE/
+   gallery-name: LINEA DE BEBÉ
+   gallery-date:
  - image_path: /gallery/albums/PREMIUM/HOMBRE.jpg
-   caption: LÍNEA DE CABALLERO
-   copyright:
+   gallery-folder: /gallery/gallery01/HOMBRE/
+   gallery-name: LÍNEA DE CABALLERO
+   gallery-date:
  - image_path: /gallery/albums/PREMIUM/KIT_BOLSILLO.jpg
-   caption: KITs DE BOLSILLO
-   copyright:
+   gallery-folder: /gallery/gallery01/HOMBRE/
+   gallery-name: KITs DE BOLSILLO
+   gallery-date:
 ---
 
 <html class="no-js" lang="en">
 <head>
 	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
 </head>
 
-    <body>
- 
+
+    <body class="gallery">
+
 	<section id="content" role="main">
 		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
 
+			<h2>{{page.title}}</h2>
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
 
-				<figure class="gallery-item">
+{% for image in page.images %}
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
+
+					</header>
 					<figcaption class='gallery-caption'>
-						<div class="entry-summary" id="{{ image.caption }}">
-							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
 						</div>
 					</figcaption>
+                       </figure>
 				</figure>
-				
+
 {% endfor %}
 
 			</div>
@@ -63,34 +70,15 @@ images:
 		</div><!-- END .wrapper -->
 	</section>
 
-<!-- jQuery -->    
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<br>
 
-<script type="text/javascript">
-      $(document).ready(function($) {
-        $('a.popup').magnificPopup({
-         type: 'image',
-	  gallery:{
-         enabled:true,
-         navigateByImgClick: true,
-         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-       },
-image: {
-      titleSrc: function(item) {
-              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-            }
-        }
-          // other options
-      });
-});
-    </script>
+<!-- jQuery -->
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -102,5 +90,4 @@ image: {
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
 </body></html>
