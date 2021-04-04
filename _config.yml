@@ -3,7 +3,7 @@ title: Meiraki
 email: "meiraki-qro@hotmail.com"
 description: "Jabones Artesanales y Terapéuticos"
 url: "https://meiraki.com.mx"
-baseurl: "/paginameiraki.github.io"
+#baseurl: "/"
 facebook_username: "Meiraki-Jabones-Artesanales-y-Terapéuticos-1638400379769477"
 twitter_username: false
 instagram_username: "meiraki_qro"
@@ -34,7 +34,7 @@ comments :
 # Internal nav
 nav:
   - CATÁLOGO: "https://meiraki.com.mx/gallery/"  
-  - CONTACTO: "https://meiraki.github.io/paginameiraki.github.io/about/"
+  - CONTACTO: "https://meiraki.com.mx/about/"
 
 # All translation keys
 translations:
