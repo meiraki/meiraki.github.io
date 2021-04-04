@@ -2,8 +2,8 @@
 title: Meiraki
 email: "meiraki-qro@hotmail.com"
 description: "Jabones Artesanales y Terapéuticos"
-url: "https://leokonig.github.io"
-baseurl: "/pag4"
+url: "https://meiraki.github.io"
+baseurl: "/paginameiraki.github.io"
 facebook_username: "Meiraki-Jabones-Artesanales-y-Terapéuticos-1638400379769477"
 twitter_username: false
 instagram_username: "meiraki_qro"
@@ -33,8 +33,8 @@ comments :
 
 # Internal nav
 nav:
-  - CATÁLOGO: "https://leokonig.github.io/pag4/gallery/"  
-  - CONTACTO: "https://leokonig.github.io/pag4/about/"
+  - CATÁLOGO: "https://meiraki.github.io/paginameiraki.github.io/gallery/"  
+  - CONTACTO: "https://mieraki.github.io/paginameiraki.github.io/about/"
 
 # All translation keys
 translations:
