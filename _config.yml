@@ -34,7 +34,7 @@ comments :
 # Internal nav
 nav:
   - CATÁLOGO: "https://meiraki.com.mx/gallery/"  
-  - CONTACTO: "https://meiraki.com.mx/about/"
+  - CONTACTO: "http://meiraki.com.mx/about/"
 
 # All translation keys
 translations:
