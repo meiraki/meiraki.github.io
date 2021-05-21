@@ -34,7 +34,7 @@ comments :
 # Internal nav
 nav:
   - CATÁLOGO: "https://meiraki.github.io/meiraki.github.io/gallery/"  
-  - CONTACTO: "https://meiraki.github.io/meiraki.github.io/about/"
+  - CONTACTO: "https://meiraki.com.mx/about/"
 
 # All translation keys
 translations:
